@@ -9,3 +9,7 @@ $(document).ready(function() {
 
     });
 });
+
+$('.container').on('click', function () {
+    $('.card1').toggleClass('flipped');
+  });
