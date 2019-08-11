@@ -68,13 +68,25 @@
     margin-bottom: 1.8em;
   }
   
-  .card .front,
-  .card .back {
+  .card .front {
     backface-visibility: hidden;
     box-sizing: border-box;
     color: white;
     display: block;
     font-size: 1.2em;
+    height: 100%;
+    padding: 0.5em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1em;
     height: 100%;
     padding: 0.8em;
     position: absolute;
@@ -82,40 +94,18 @@
     width: 100%;
   }
   
-  .card .front strong {
-    background: #fff;
-    border-radius: 100%;
-    color: #222;
-    font-size: 1.5em;
-    line-height: 30px;
-    padding: 0 7px 4px 6px;
-  }
+  
   
   .card .back {
     transform: rotateY( 180deg);
   }
   
-  .card .back a {
-    padding: 0.3em 0.5em;
-    background: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 1px;
-    font-size: 0.9em;
-    transition: all 0.2s ease 0s;
-  }
   
-  .card .back a:hover {
-    background: #fff;
-    color: #333;
-    text-shadow: 0 0 1px #333;
-  }
-  
-  .cardBox:nth-child(1) .card .back {
+  .cardBox .card .back {
     background: cornflowerblue;
   }
   
-  .cardBox:nth-child(2) .card .back {
+  /* .cardBox:nth-child(2) .card .back {
     background: orange;
   }
   
@@ -140,7 +130,7 @@
   .cardBox:nth-child(4) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2.5s 1;
-  }
+  } */
   
   @-webkit-keyframes giro {
     from {
@@ -160,7 +150,7 @@
     }
   }
   
-  @media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px) {
     .cardBox {
       width:100%;
     }
@@ -179,4 +169,4 @@
     .card {
       height: 260px;
     }
-  }
+  } */
