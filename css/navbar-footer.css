@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+
 * {
   font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
     background-color: #0067b2;
+    font-family: 'Viga', sans-serif;
 }
 
 .navbar-menu {
@@ -18,4 +21,16 @@
 
 .navbar-menu a:hover {
     color: #0067b2 !important;
+    border-bottom: 3px solid #fbb700
+}
+
+footer {
+    font-family: 'Viga', sans-serif;
+    background-color: #0067b2 !important;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu a:hover {
+       border-bottom: none
+     }
 }

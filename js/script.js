@@ -10,11 +10,6 @@ $(document).ready(function() {
     });
 });
 
-$('.container').on('click', function () {
-    $('.card1').toggleClass('flipped');
-  });
-
-
 (function () {
     var options = {
         whatsapp: "+ (651) 443-6926", // WhatsApp number
