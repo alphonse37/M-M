@@ -72,7 +72,7 @@
 
 
 .cardBox .card .back {
-  background: #fbb700;
+  background: #0067b2;
 }
 
 @-webkit-keyframes giro {
@@ -94,6 +94,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .title-1 {
+    font-size: 30px;
+  }
+  
   .cardBox {
     width:100%;
   }
