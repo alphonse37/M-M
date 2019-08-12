@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .cardBox {
     font-size: 1.2em;
     perspective: 800px;
@@ -59,7 +65,7 @@
 
 
 .cardBox .card .back {
-  background: cornflowerblue;
+  background: #0067b2;
 }
 
 /* .cardBox:nth-child(2) .card .back {
