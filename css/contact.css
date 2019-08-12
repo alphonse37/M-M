@@ -10,3 +10,21 @@
     font-family: 'Viga', sans-serif;
     font-size: 45px;
 }
+
+.image-contact {
+    margin-top: 10%;
+    /* transform: translateY(-50%); */
+}
+
+.image-contact img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.fondo {
+    background-color: #222;
+}
+
+form {
+    padding: 20px;
+}

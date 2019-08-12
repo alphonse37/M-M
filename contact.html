@@ -52,28 +52,39 @@
             Contact Us
           </div>
           <br><br>
-          <div class="container">
+          <div class="fondo">
               <div class="columns is-multiline">
-                <div class="column is-full-mobile is-half-desktop">
-                  hola
+                <div class="column image-contact is-full-mobile is-half-desktop is-centered">
+                  <h2 class="subtitle has-text-centered has-text-white">
+                    ¡Contact us!
+                  </h2>
+                  <p class="has-text-centered has-text-white">
+                    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;(651) 443-6926
+                  </p>
+                  <p class="has-text-centered has-text-white">
+                    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;(651) 417-5008
+                  </p>
+                  <p class="has-text-centered has-text-white">
+                    <i class="far fa-envelope"></i>&nbsp;&nbsp;contact@mmpaintingmn.com 
+                  </p>
+                 <img src="images/roller paint.png" alt="" width="85%">
                 </div>
 
                 <div class="column is-full-mobile is-half-desktop">
-
-                  <h2 class="subtitle has-text-centered">¡Get a free estimate!</h2>
+                  <h2 class="subtitle has-text-centered has-text-white">¡Get a free estimate!</h2>
                   <form>
                       <div class="field">
                         <div class="columns is-multiline">
                           <div class="column is-half">
-                              <label class="label">First Name</label>
+                              <label class="label has-text-white">First Name</label>
                               <p class="control">
-                                <input class="input" type="text" pattern="[a-z A-z]+" title="Please, write only text" placeholder="First Name">
+                                <input class="input" type="text" pattern="[a-z A-z]+" title="Please, write only text" placeholder="First Name" required>
                               </p>
                           </div>
                           <div class="column is-half">
-                              <label class="label">Last Name</label>
+                              <label class="label has-text-white has-text-white">Last Name</label>
                               <p class="control">
-                                <input class="input" pattern="[a-z A-z]+" title="Please, write only text" type="text" placeholder="Last Name">
+                                <input class="input" pattern="[a-z A-z]+" title="Please, write only text" type="text" placeholder="Last Name" required>
                               </p>
                           </div>
                         </div>
@@ -82,15 +93,15 @@
                       <div class="field">
                         <div class="columns is-multiline">
                           <div class="column is-half">
-                              <label class="label">Email Address</label>
+                              <label class="label has-text-white">Email Address</label>
                               <p class="control">
-                                <input class="input" type="email" placeholder="Email Address">
+                                <input class="input" pattern="[a-zA-z0-9._-]{1,100}[@][a-zA-z0-9]{1,50}[.][a-z]{1,3}" title="e.g. example@example.com" type="email" placeholder="Email Address" required>
                               </p>
                           </div>
                           <div class="column is-half">
-                              <label class="label">Telephone Number</label>
+                              <label class="label has-text-white">Telephone Number</label>
                               <p class="control">
-                                <input class="input" type="text" placeholder="Telephone Number">
+                                <input class="input" pattern="[0-9]{3}[ ][0-9]{3}[-][0-9]{4}" title="e.g. 212 324-4152" type="text" placeholder="Telephone Number" required>
                               </p>
                           </div>
                         </div>
@@ -99,28 +110,27 @@
                       <div class="field">
                         <div class="columns is-multiline">
                           <div class="column is-full">
-                              <label class="label">Area approx ft square</label>
+                              <label class="label has-text-white">Area approx ft square</label>
                               <p class="control">
-                                <input class="input" type="email" placeholder="Area approx ft square">
+                                <input class="input" pattern="[0-9]+" type="text" placeholder="Area approx ft square" required>
                               </p>
                           </div>
                           <div class="column is-full">
-                            <label class="label">Tell us about your project </label>
+                            <label class="label has-text-white">Tell us about your project </label>
                             <div class="control">
-                              <textarea class="textarea" placeholder="Tell us about your project "></textarea>
+                              <textarea class="textarea" placeholder="Tell us about your project" required></textarea>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="field">
+                      <div class="field is-grouped is-grouped-centered">
+                       
                           <div class="control">
-                            <button class="button is-link">Submit</button>
+                            <button type="submit" class="button is-link is-centered">Submit</button>
                           </div>
-                          <div class="control">
-                            <button class="button is-text">Cancel</button>
-                          </div>
-                        </div>
+                        
+                      </div>
                   </form>
                 </div>
               </div>

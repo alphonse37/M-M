@@ -93,15 +93,21 @@
   }
 }
 
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .cardBox {
     width:100%;
   }
   .card {
+    width: 60%;
     height: 285px;
+    margin: 0 auto
   }
   .cardBox:last-child {
     margin-bottom: 3%;
+  }
+
+  .front img {
+    width: 90%;
   }
 }
 
@@ -110,6 +116,13 @@
     width: 100%;
   }
   .card {
-    height: 260px;
+    height: 250px !important;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto
   }
-} */
+
+  .back p {
+    font-size: 15px;
+  }
+}
