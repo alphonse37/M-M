@@ -61,3 +61,17 @@ footer {
     }
 }
 
+@media screen and (max-width: 835px) {
+    footer {
+        
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        
+        height: 275px;
+    }
+}
+

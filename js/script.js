@@ -6,7 +6,102 @@ $(document).ready(function() {
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
+    });
 
+    $("#interior").click(function() {
+        $(".modal-interior").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-interior").removeClass("is-active");
+    });
+
+    $("#exterior").click(function() {
+        $(".modal-exterior").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-exterior").removeClass("is-active");
+    });
+
+    $("#commercial").click(function() {
+        $(".modal-commercial").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-commercial").removeClass("is-active");
+    });
+
+    $("#residential").click(function() {
+        $(".modal-residential").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-residential").removeClass("is-active");
+    });
+
+    $("#office").click(function() {
+        $(".modal-office").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-office").removeClass("is-active");
+    });
+
+    $("#wallpaper").click(function() {
+        $(".modal-wallpaper").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-wallpaper").removeClass("is-active");
+    });
+
+    $("#decks").click(function() {
+        $(".modal-decks").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-decks").removeClass("is-active");
+    });
+
+    $("#fences").click(function() {
+        $(".modal-fences").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-fences").removeClass("is-active");
+    });
+
+    $("#primers").click(function() {
+        $(".modal-primers").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-primers").removeClass("is-active");
+    });
+
+    $("#drywalls").click(function() {
+        $(".modal-drywalls").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-drywalls").removeClass("is-active");
+    });
+
+    $("#enamel").click(function() {
+        $(".modal-enamel").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-enamel").removeClass("is-active");
+    });
+
+    $("#extras").click(function() {
+        $(".modal-extras").addClass("is-active");  
+      });
+      
+      $(".modal-close").click(function() {
+         $(".modal-extras").removeClass("is-active");
     });
 });
 
