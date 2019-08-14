@@ -44,16 +44,23 @@
         $mail->Charset = 'UTF-8';
 
         $mail->send();
-        echo ("<script>
-            alert(
-                'Your estimate has been sent',
-            );
+        echo ("
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>
+            <script>
+                Swal.fire(
+                    title: 'Your estimate has been send',
+                    text: '¡Thank you!'
+                );
 
-            window.history.go(-1);
+                function redirect() {
+                    window.location='contact.html';
+                }
+                setTimeout('redirect()',2000);
+               
             </script>");
 
     } catch (Exception $e) {
-        echo "Message could not be sent", $mail->ErrorInfo;
+        echo "Message could not be sent: {$mail->ErrorInfo}";
     }
 
 ?>
