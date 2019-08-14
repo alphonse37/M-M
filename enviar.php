@@ -33,7 +33,7 @@
 
         //Recipients
         $mail->setFrom($email, $name);
-        $mail->addAddress('mmpaintingmn.llc@gmail.com');     // Add a recipient
+        $mail->addAddress($email);     // Add a recipient
         $mail->addReplyTo($email);
 
 
