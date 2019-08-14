@@ -1,5 +1,5 @@
 <?php
-    // contact@mmpaintingmn.com
+   
     $name = $_POST['name'];
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
@@ -7,8 +7,7 @@
     $area = $_POST['area'];
     $comments = $_POST['comments'];
     $content = '<br>First Name: ' . $name . '<br>Last Name: ' . $lastname . '<br>E-mail: ' . $email . '<br>Telephone Number' . $telephone . '<br>Area approx: ' . $area . '<br>Comments: ' . $comments;
-    // mail($send, 'Contacto', $content);
-    // header('location: contact.html');
+    
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
@@ -27,14 +26,15 @@
         $mail->isSMTP();                                            // Set mailer to use SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'jesus.colocho.37@gmail.com';           // SMTP username
-        $mail->Password   = 'hagarenwaninoko37';                    // SMTP password
+        $mail->Username   = 'mmpaintingmn.llc@gmail.com';           // SMTP username
+        $mail->Password   = 'mmpaintingllc01';                    // SMTP password
         $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
         $mail->Port       = 587;                                    // TCP port to connect to
 
         //Recipients
         $mail->setFrom($email, $name);
-        $mail->addAddress('jesus.colocho.37@gmail.com');     // Add a recipient
+        $mail->addAddress('mmpaintingmn.llc@gmail.com');     // Add a recipient
+        $mail->addReplyTo($email);
 
 
         // Content
@@ -47,10 +47,10 @@
         echo ("
             <script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>
             <script>
-                Swal.fire(
+                Swal.fire({
                     title: 'Your estimate has been send',
                     text: '¡Thank you!'
-                );
+                });
 
                 function redirect() {
                     window.location='contact.html';
