@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 (function() {
   
     var autoUpdate = true,
@@ -128,3 +129,5 @@
       },timeTrans);
   
   })();
+
+});

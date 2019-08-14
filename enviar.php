@@ -45,15 +45,14 @@
 
         $mail->send();
         echo ("
-            <script>
-            document.addEventListener('DOMContentLoaded', function () {
-               alert('Good job!');
+            <script type='text/javascript'> 
+                    alert('holi');
+                    
 
-                function redirect() {
-                    window.location='contact.html';
-                }
-                setTimeout('redirect()',2100);
-            });
+                    function redirect() {
+                        window.location='index.php?p=contact.php';
+                    }
+                    setTimeout('redirect()',100);
             </script>
         ");
 

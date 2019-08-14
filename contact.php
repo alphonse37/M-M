@@ -8,24 +8,25 @@
     <title>M&M Painting LLC</title>
 
     <!-- BULMA CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-    <link rel="stylesheet" href="css/navbar-footer.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/navbar-footer.css"> -->
     <link rel="stylesheet" href="css/contact.css">
     
 
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/7eaf41582e.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/7eaf41582e.js"></script> -->
    
 
     <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+   
+    <!-- <script src="js/script.js"></script> -->
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-              <a href="index.html">
+              <a href="index.php">
                 <img src="images/LOGODESIGN6-01-2.png">
               </a>
           
@@ -38,13 +39,13 @@
           
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item has-text-white" href="index.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a>
-                <a class="navbar-item has-text-white" href="services.html"><i class="fas fa-brush"></i>&nbsp;&nbsp;Our Services</a>
-                <a class="navbar-item has-text-white" href="contact.html"><i class="fas fa-mail-bulk"></i>&nbsp;&nbsp;Contact</a>
+                <a class="navbar-item has-text-white" href="index.php"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a>
+                <a class="navbar-item has-text-white" href="services.php"><i class="fas fa-brush"></i>&nbsp;&nbsp;Our Services</a>
+                <a class="navbar-item has-text-white" href="contact.php"><i class="fas fa-mail-bulk"></i>&nbsp;&nbsp;Contact</a>
               </div>
             </div>
           </nav>
-    </header>
+    </header> -->
 
     <main>
       <div class="hero">
@@ -141,7 +142,7 @@
       </div>
     </main>
     
-    <footer class="footer has-text-white">
+    <!-- <footer class="footer has-text-white">
         <div class=" has-text-centered">
             <p class="subtitle has-text-white">
                 Contact Us
@@ -164,6 +165,6 @@
                 Copyright 2019 M&M Painting LLC
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

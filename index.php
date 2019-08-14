@@ -19,14 +19,16 @@
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/script.js"></script>
+    
 
 </head>
 <body>
     <header>
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-              <a href="index.html">
+              <a href="index.php">
                 <img src="images/LOGODESIGN6-01-2.png">
               </a>
           
@@ -39,16 +41,22 @@
           
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item has-text-white" href="index.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a>
-                <a class="navbar-item has-text-white" href="services.html"><i class="fas fa-brush"></i>&nbsp;&nbsp;Our Services</a>
-                <a class="navbar-item has-text-white" href="contact.html"><i class="fas fa-mail-bulk"></i>&nbsp;&nbsp;Contact</a>
+                <a class="navbar-item has-text-white" href="index.php"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a>
+                <a class="navbar-item has-text-white" href="?p=services.php"><i class="fas fa-brush"></i>&nbsp;&nbsp;Our Services</a>
+                <a class="navbar-item has-text-white" href="?p=contact.php"><i class="fas fa-mail-bulk"></i>&nbsp;&nbsp;Contact</a>
               </div>
             </div>
           </nav>
     </header>
 
-    <main>       
 
+    <!-- CONDITION PHP -->
+    <?php
+        if (isset($_GET['p'])) {
+            include $_GET['p'];
+        } else {
+    ?>
+    <main>       
         <section class="cd-slider is-fullwidth">
             <ul>
                 <li>
@@ -239,6 +247,11 @@
         </section>
     </main>
 
+    <!-- CLOSE THE ELSE CONDITION -->
+    <?php
+    }
+    ?>
+    
     <footer class="footer has-text-white">
         <div class=" has-text-centered">
             <p class="subtitle has-text-white">
@@ -264,6 +277,18 @@
         </div>
     </footer>
 
-    <script src="js/slider.js"></script>
+    <script>
+        $(document).ready(function() {
+    
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    
+    </script>
 </body>
 </html>
