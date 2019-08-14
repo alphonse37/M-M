@@ -53,7 +53,7 @@
                 });
 
                 function redirect() {
-                    window.location='contact.html';
+                    window.location.replace('contact.html');
                 }
                 setTimeout('redirect()',2000);
                
