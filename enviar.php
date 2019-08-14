@@ -6,7 +6,7 @@
     $telephone = $_POST['telephone'];
     $area = $_POST['area'];
     $comments = $_POST['comments'];
-    $content = '<br>First Name: ' . $name . '<br>Last Name: ' . $lastname . '<br>E-mail: ' . $email . '<br>Telephone Number' . $telephone . '<br>Area approx: ' . $area . '<br>Comments: ' . $comments;
+    $content = '<br>First Name: ' . $name . '<br>Last Name: ' . $lastname . '<br>E-mail: ' . $email . '<br>Telephone Number: ' . $telephone . '<br>Area approx: ' . $area . '<br>Comments: ' . $comments;
     
 
     use PHPMailer\PHPMailer\PHPMailer;
@@ -33,7 +33,7 @@
 
         //Recipients
         $mail->setFrom($email, $name);
-        $mail->addAddress($email);     // Add a recipient
+        $mail->addAddress('mmpaintingmn.llc@gmail.com');     // Add a recipient
         $mail->addReplyTo($email);
 
 
@@ -45,19 +45,17 @@
 
         $mail->send();
         echo ("
-            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>
             <script>
-                Swal.fire({
-                    title: 'Your estimate has been send',
-                    text: '¡Thank you!'
-                });
+            document.addEventListener('DOMContentLoaded', function () {
+               alert('Good job!');
 
                 function redirect() {
-                    window.location.replace('contact.html');
+                    window.location='contact.html';
                 }
-                setTimeout('redirect()',2000);
-               
-            </script>");
+                setTimeout('redirect()',2100);
+            });
+            </script>
+        ");
 
     } catch (Exception $e) {
         echo "Message could not be sent: {$mail->ErrorInfo}";
