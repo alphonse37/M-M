@@ -11,6 +11,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> -->
     <!-- <link rel="stylesheet" href="css/navbar-footer.css"> -->
     <link rel="stylesheet" href="css/contact.css">
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>
     
 
     <!-- font awesome -->

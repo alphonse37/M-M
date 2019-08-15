@@ -45,14 +45,20 @@
 
         $mail->send();
         echo ("
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@8'></script>
             <script type='text/javascript'> 
-                    alert('holi');
-                    
+            document.addEventListener('DOMContentLoaded', function () {
+                Swal.fire(
+                    'Your estimate has been send',
+                    'Thank you!',
+                );
+            });    
 
                     function redirect() {
                         window.location='index.php?p=contact.php';
                     }
-                    setTimeout('redirect()',100);
+                    setTimeout('redirect()',2100);
+            
             </script>
         ");
 
