@@ -105,7 +105,7 @@
                           <div class="column is-half">
                               <label class="label has-text-white">Telephone Number</label>
                               <p class="control">
-                                <input class="input" pattern="[0-9]{3}[ ][0-9]{3}[-][0-9]{4}" title="e.g. 212 324-4152" type="text" name="telephone" id="telephone" placeholder="Telephone Number" required>
+                                <input class="input" pattern="[0-9]{3}[ ][0-9]{3}[-][0-9]{4}" title="e.g. 212 324-4152" type="tel" name="telephone" id="telephone" placeholder="Telephone Number" required>
                               </p>
                           </div>
                         </div>
