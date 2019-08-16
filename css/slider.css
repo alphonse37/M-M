@@ -161,35 +161,9 @@
     .cd-slider {
         height: 100vh;
     }
-}
-
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-    .cd-slider {
-        height: 60vh;
-    }
-}
-
-@media screen and (max-width: 992px) and (orientation: landscape) {
-    .cd-slider {
-        height: 57vh;
-    }
 }*/
 
-@media screen and (max-width: 992px) and (orientation: portrait) {
-    /* .cd-slider {
-        height: 40vh;
-    } */
-
-    .logo img {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 768px) and (orientation: portrait) {
-    /* .cd-slider {
-        height: 38vh;
-    } */
-
+@media screen and (max-width: 1024px) {
     .logo {
         left: 60%;
         top: 15%;
@@ -199,59 +173,90 @@
         width: 40%;
     }
 }
+/*
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    .cd-slider {
+        height: 57vh;
+    }
+}*/
 
-@media screen and (max-width: 600px) and (orientation: portrait) {
+/* @media screen and (max-width: 992px) and (orientation: portrait) { */
+    /* .cd-slider {
+        height: 40vh;
+    } */
+
+    /* .logo img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) { */
+    /* .cd-slider {
+        height: 38vh;
+    } */
+
+    /* .logo {
+        left: 60%;
+        top: 15%;
+    }
+
+    .logo img {
+        width: 40%;
+    }
+} */
+
+/* @media screen and (max-width: 600px) and (orientation: portrait) { */
     /* .cd-slider {
         height: 35vh;
     } */
 
-    .logo {
-        left: 60%;
+    /* .logo { */
+        /* left: 60%;
     }
 
     .logo img {
         width: 40%;
     }
-}
+} */
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+/* @media screen and (max-width: 500px) and (orientation: portrait) { */
     /* .cd-slider {
         height: 30vh;
     } */
 
-    .logo {
+    /* .logo {
         left: 60%;
     }
 
     .logo img {
         width: 40%;
     }
-}
+} */
 
-@media screen and (max-width: 420px) and (orientation: portrait) {
+/* @media screen and (max-width: 420px) and (orientation: portrait) { */
     /* .cd-slider {
         height: 25vh;
     } */
 
-    .logo {
+    /* .logo {
         left: 60%;
     }
 
     .logo img {
         width: 40%;
     }
-}
+} */
 
-@media screen and (max-width: 360px) and (orientation: portrait) {
+/* @media screen and (max-width: 360px) and (orientation: portrait) { */
     /* .cd-slider {
         height: 28vh;
     } */
 
-    .logo {
+    /* .logo {
         left: 60%;
     }
 
     .logo img {
         width: 40%;
     }
-} 
+}  */
