@@ -9,7 +9,7 @@
 
     <!-- BULMA CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-
+    <link rel="stylesheet" href="https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css">
     <link rel="stylesheet" href="css/navbar-footer.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/index.css">
@@ -19,8 +19,9 @@
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/slider.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
     <script src="js/script.js"></script>
+    <script src="https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js"></script>
     
 
 </head>
@@ -56,8 +57,21 @@
             include $_GET['p'];
         } else {
     ?>
-    <main>       
-        <section class="cd-slider is-fullwidth">
+    <main>  
+    <div class="demo">
+                <div id="lightSlider">
+                        <img src="images/slider1.jpg" />
+                   
+                        <img src="images/slider2.jpg" />
+                    
+                        <img src="images/slider3.jpg" />
+                </div>
+
+                <div class="logo">
+                <img src="images/LOGODESIGN6-01-2.png" alt="">
+            </div>
+            </div>     
+        <!-- <section class="cd-slider is-fullwidth">
             <ul>
                 <li>
                     <div class="content">
@@ -83,10 +97,8 @@
             <div><a class="prev" href="#"></a></div>
             <div><a class="next" href="#"></a></div>
             </nav>
-            <div class="logo">
-                <img src="images/LOGODESIGN6-01-2.png" alt="">
-            </div>
-        </section>
+            
+        </section> -->
            
         <div class="hero line">
             <div class="hero-body">
@@ -287,8 +299,18 @@
                 $(".navbar-burger").toggleClass("is-active");
                 $(".navbar-menu").toggleClass("is-active");
             });
+
+$('#lightSlider').lightSlider({
+            gallery: true,
+            item: 1,
+            loop:true,
+            slideMargin: 0,
+            thumbItem: 9,
+            auto: true,
+           
         });
-    
+
+        });
     </script>
 </body>
 </html>
