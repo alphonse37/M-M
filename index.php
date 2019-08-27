@@ -65,6 +65,8 @@
                         <img src="images/slider2.jpg" />
                     
                         <img src="images/slider3.jpg" />
+
+                        <img src="images/slider4.jpg" />
                 </div>
 
                 <div class="logo">
