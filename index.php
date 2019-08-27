@@ -30,7 +30,7 @@
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a href="index.php">
-                <img src="images/LOGODESIGN6-01-2.png">
+                <img src="images/logo.png">
               </a>
           
               <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="logo">
-                <img src="images/LOGODESIGN6-01-2.png" alt="">
+                <img src="images/logo.png" alt="">
             </div>
             </div>     
         <!-- <section class="cd-slider is-fullwidth">
@@ -300,15 +300,15 @@
                 $(".navbar-menu").toggleClass("is-active");
             });
 
-$('#lightSlider').lightSlider({
-            gallery: true,
-            item: 1,
-            loop:true,
-            slideMargin: 0,
-            thumbItem: 9,
-            auto: true,
-           
-        });
+            $('#lightSlider').lightSlider({
+                gallery: true,
+                item: 1,
+                loop:true,
+                slideMargin: 0,
+                thumbItem: 9,
+                auto: true,
+            
+            });
 
         });
     </script>
