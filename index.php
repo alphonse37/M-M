@@ -273,11 +273,11 @@
             </p>
             <div class="columns is-multiline">
                 <div class="column is-one-third">
-                    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;(651) 443-6926
+                    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;(651) 242-1678
                 </div>
 
                 <div class="column is-one-third">
-                    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;(651) 417-5008
+                    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;(651) 260-8032
                 </div>
 
                 <div class="column is-one-third">
